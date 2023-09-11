@@ -1,16 +1,17 @@
 <template>
-  <h1 class="h1">Hello World</h1>
+  <h1 class="h1">Hello Home Page</h1>
 </template>
 
 <script setup>
-import { onMounted } from "vue";
+import {onMounted} from "vue";
 
 definePageMeta({
   layout: "default",
+  //middleware: 'auth'
 });
 
 useHead({
-  title: 'Index.html',
+  title: 'Home',
 })
 
 onMounted(() => {
